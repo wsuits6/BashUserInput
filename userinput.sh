@@ -12,7 +12,7 @@ echo  "[+] Scanning $TARGET on port $PORT"
 
 # Interactive prompt 
 read -p 'Enter the target IP: ' USER_IP
-read -s 'Enter Password (hidden)' PASS  
+read -s -p 'Enter Password (hidden): ' PASS   # use -s to hide input use  -p to take input 
 echo '     ' # new line for hidden input 
 
 echo "Target entered: $USER_IP" 
